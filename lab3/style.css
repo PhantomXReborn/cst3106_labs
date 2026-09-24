@@ -1,0 +1,169 @@
+/* ---------- Base ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.55;
+    color: #222;
+    background-color: #f4f4f4;
+    padding: clamp(0.5rem, 2vw, 2rem);
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Resume Container ---------- */
+.resume {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+    background-color: #ffffff;
+    padding: clamp(1rem, 3vw, 3rem) clamp(1rem, 4vw, 3.5rem);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+/* ---------- Header ---------- */
+.header {
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 1rem;
+    margin-bottom: clamp(1rem, 2vw, 1.75rem);
+}
+
+.header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    letter-spacing: 1px;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.contact {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem clamp(0.75rem, 2vw, 1.5rem);
+    font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+    color: #555;
+}
+
+.contact a {
+    color: #2c3e50;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Sections ---------- */
+.section {
+    margin-bottom: clamp(1rem, 2.5vw, 1.75rem);
+}
+
+.section h2 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #2c3e50;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 0.35rem;
+    margin-bottom: clamp(0.6rem, 1.5vw, 0.9rem);
+}
+
+/* ---------- Entries ---------- */
+.entry {
+    margin-bottom: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+.entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+}
+
+.entry-head h3 {
+    font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+    color: #1a1a1a;
+}
+
+.date {
+    font-size: clamp(0.78rem, 1.3vw, 0.88rem);
+    color: #777;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.subtitle {
+    font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+    color: #555;
+    margin-top: 0.15rem;
+}
+
+/* ---------- Lists ---------- */
+.section ul {
+    list-style: disc;
+    padding-left: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.section ul li {
+    margin-bottom: 0.3rem;
+    font-size: clamp(0.85rem, 1.4vw, 0.97rem);
+}
+
+.skills li {
+    margin-bottom: 0.4rem;
+}
+
+/* Interests as inline pills */
+.interests {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.35rem, 1vw, 0.6rem);
+}
+
+.interests li {
+    background-color: #eef2f7;
+    color: #2c3e50;
+    padding: 0.25rem clamp(0.6rem, 1.5vw, 0.85rem);
+    border-radius: 999px;
+    font-size: clamp(0.78rem, 1.3vw, 0.88rem);
+}
+
+/* ---------- Wide Screens: use columns for better space usage ---------- */
+
+@media (min-width: 1100px) {
+    .resume {
+        max-width: 1200px;
+    }
+}
+
+/* ---------- Small Screens ---------- */
+@media (max-width: 600px) {
+    .entry-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        white-space: normal;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}
