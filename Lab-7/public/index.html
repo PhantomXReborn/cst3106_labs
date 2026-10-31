@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yatzy — Lab 07 (Client-Server)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+
+    <!-- HEADER -->
+    <header class="game-header">
+      <div class="logo">🎲 Yatzy</div>
+      <div class="roll-counter" id="rollCounter">Roll 1 of 3</div>
+    </header>
+
+    <!-- PLAYER PANEL -->
+    <section class="player-panel">
+      <div class="player-card p1 active">
+        <span class="player-name">👤 Player 1</span>
+        <span class="player-score" id="p1Score">59</span>
+      </div>
+      <div class="player-card p2">
+        <span class="player-name">👤 Player 2</span>
+        <span class="player-score" id="p2Score">42</span>
+      </div>
+    </section>
+
+    <!-- DICE TRAY -->
+    <section class="dice-tray">
+      <div class="dice-row" id="diceContainer">
+        <!-- Dice will be dynamically generated/updated here -->
+        <div class="die" data-value="1"><span class="pip"></span></div>
+        <div class="die" data-value="2"><span class="pip"></span><span class="pip"></span></div>
+        <div class="die" data-value="3"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+        <div class="die" data-value="4"><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+        <div class="die" data-value="5"><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+      </div>
+      <button class="roll-btn" id="rollBtn">Roll Dice</button>
+      
+      <!-- Error message display -->
+      <div id="errorMessage" style="color: var(--red-light); font-family: var(--font-mono); font-size: 0.8rem; display: none;"></div>
+
+      <div class="tech-tags">
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Express</span>
+      </div>
+    </section>
+
+    <!-- SCORECARD (Static for this lab) -->
+    <section class="scorecard">
+      <h2>Scorecard</h2>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Score</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ones</td><td>3</td></tr>
+          <tr><td>Twos</td><td>6</td></tr>
+          <tr><td>Threes</td><td>—</td></tr>
+          <tr><td>Fours</td><td>—</td></tr>
+          <tr><td>Fives</td><td>—</td></tr>
+          <tr><td>Sixes</td><td>—</td></tr>
+          <tr class="subtotal"><td>Upper Subtotal</td><td>9</td></tr>
+          <tr class="bonus"><td>Upper Bonus (63+)</td><td>—</td></tr>
+          <tr class="active"><td>Three of a Kind</td><td>—</td></tr>
+          <tr><td>Four of a Kind</td><td>—</td></tr>
+          <tr><td>Full House</td><td>—</td></tr>
+          <tr><td>Small Straight</td><td>—</td></tr>
+          <tr><td>Large Straight</td><td>—</td></tr>
+          <tr class="yatzy"><td>Yatzy</td><td>50</td></tr>
+          <tr><td>Chance</td><td>—</td></tr>
+          <tr class="total"><td>Total</td><td>59</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="status-bar">
+      <span>🎲 Yatzy v1.0 · 5 dice · 13 categories</span>
+      <span id="statusText">🏆 High Score: 245 · 👤 Player 1's turn</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
