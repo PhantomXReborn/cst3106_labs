@@ -47,11 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const held = getHeldIndices();
+      
+      // Grab the current dice values from the DOM
+      const currentValues = [...diceContainer.querySelectorAll('.die')]
+        .map(die => parseInt(die.getAttribute('data-value')));
 
       const response = await fetch('/roll-dices', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ held }),
+        // Send currentValues along with held indices
+        body: JSON.stringify({ held, currentValues }),
       });
 
       if (!response.ok) {
