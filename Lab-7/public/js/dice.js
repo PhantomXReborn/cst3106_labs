@@ -1,9 +1,9 @@
 /**
  * Dice Module
  * Encapsulates the logic for rolling dice.
- * Tracks the number of dice and their current values.
+ * Migrated to the server for Lab 07 (client-server architecture).
  *
- * Lab 06 — CST3106
+ * Lab 07 — CST3106
  */
 
 const Dice = (() => {
@@ -12,36 +12,25 @@ const Dice = (() => {
   let diceCount = 5;
 
   // ----- Private helpers -----
-  /**
-   * Returns a random integer between 1 and 6 (inclusive).
-   */
   function randomFace() {
     return Math.floor(Math.random() * 6) + 1;
   }
 
   // ----- Public API -----
   return {
-    /**
-     * Sets how many dice the module manages.
-     * @param {number} count
-     */
     setDiceCount(count) {
       diceCount = count;
       diceValues = new Array(count).fill(1);
     },
 
-    /**
-     * Returns the current number of dice.
-     * @returns {number}
-     */
     getDiceCount() {
       return diceCount;
     },
 
     /**
-     * Rolls all dice (or only the indices provided).
-     * @param {number[]} [indices] - optional indices to re-roll (held dice are excluded)
-     * @returns {number[]} the new dice values
+     * Rolls all dice, or only the given indices.
+     * @param {number[]} [indices] - indices to re-roll; omit to roll all
+     * @returns {number[]} new dice values
      */
     roll(indices = null) {
       if (diceValues.length !== diceCount) {
@@ -59,26 +48,16 @@ const Dice = (() => {
       return [...diceValues];
     },
 
-    /**
-     * Returns a copy of the current dice values.
-     * @returns {number[]}
-     */
     getValues() {
       return [...diceValues];
     },
 
-    /**
-     * Returns a single die value by index.
-     * @param {number} index
-     * @returns {number}
-     */
     getValue(index) {
       return diceValues[index];
     },
   };
 })();
 
-// Export for use in other modules (Node / ES module environments)
 if (typeof module !== "undefined" && module.exports) {
   module.exports = Dice;
 }

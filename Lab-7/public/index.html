@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yatzy — Lab 07 (Client-Server)</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css"></head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
   <div class="game-container">
 
     <!-- HEADER -->
     <header class="game-header">
       <div class="logo">🎲 Yatzy</div>
-      <div class="roll-counter" id="rollCounter">Roll 1 of 3</div>
+      <div class="roll-counter" id="rollCounter">Roll 0 of 3</div>
     </header>
 
     <!-- PLAYER PANEL -->
@@ -30,7 +31,6 @@
     <!-- DICE TRAY -->
     <section class="dice-tray">
       <div class="dice-row" id="diceContainer">
-        <!-- Dice will be dynamically generated/updated here -->
         <div class="die" data-value="1"><span class="pip"></span></div>
         <div class="die" data-value="2"><span class="pip"></span><span class="pip"></span></div>
         <div class="die" data-value="3"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
@@ -38,7 +38,7 @@
         <div class="die" data-value="5"><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
       </div>
       <button class="roll-btn" id="rollBtn">Roll Dice</button>
-      
+
       <!-- Error message display -->
       <div id="errorMessage" style="color: var(--red-light); font-family: var(--font-mono); font-size: 0.8rem; display: none;"></div>
 
@@ -51,7 +51,8 @@
       </div>
     </section>
 
-    <!-- SCORECARD (Static for this lab) -->
+    <!-- SCORECARD -->
+    <!-- Scorecard static: Lab 07 scope is the Dice Module only -->
     <section class="scorecard">
       <h2>Scorecard</h2>
       <table>

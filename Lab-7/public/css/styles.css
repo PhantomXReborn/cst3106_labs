@@ -55,7 +55,6 @@ body {
 .die.held::after { content: "✓"; position: absolute; top: -8px; right: -8px; width: 20px; height: 20px; background: var(--gold); color: var(--stone); font-size: 0.7rem; font-weight: 700; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; }
 .pip { width: 10px; height: 10px; background: var(--stone); border-radius: var(--radius-full); }
 
-/* Dice rolling animation */
 @keyframes rolling {
   0% { transform: rotate(0deg) scale(1); }
   50% { transform: rotate(180deg) scale(1.2); }
@@ -63,7 +62,6 @@ body {
 }
 .rolling { animation: rolling 0.5s ease-in-out; }
 
-/* Pip Layouts */
 .die[data-value="1"] .pip:nth-child(1) { grid-area: 2 / 2; }
 .die[data-value="2"] .pip:nth-child(1) { grid-area: 1 / 1; }
 .die[data-value="2"] .pip:nth-child(2) { grid-area: 3 / 3; }

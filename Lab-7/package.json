@@ -6,11 +6,7 @@
   "scripts": {
     "start": "node server.js"
   },
-  "keywords": [
-    "yatzy",
-    "express",
-    "node"
-  ],
+  "keywords": ["yatzy", "express", "node"],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
