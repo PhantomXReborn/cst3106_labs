@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CST3106 – Lab 08: Dice Rolling Animation with jQuery</title>
+
+  <!-- 1. Setting Up: jQuery via CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Reuse the Yatzy theme variables + dice styles -->
+  <link rel="stylesheet" href="lab8.css" />
+</head>
+<body>
+  <main class="lab-wrap">
+    <h1>🎲 Lab 08 – Dice Rolling Animation</h1>
+    <p class="hint">Click <strong>Roll</strong> to animate the die and get a random value (1–6).</p>
+
+    <!-- 2. Dice Representation: a single die, initially showing 6 -->
+    <div class="die" id="die" data-value="6" aria-label="Die" role="img">
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+
+    <!-- 4. Event Handling: button to trigger the roll -->
+    <button class="roll-btn" id="rollBtn">Roll</button>
+
+    <div class="result" id="result">Face value: 6</div>
+
+    <div class="tech-tags">
+      <span class="tech-tag">jQuery 3.7.1</span>
+      <span class="tech-tag">DOM Manipulation</span>
+      <span class="tech-tag">CSS Animation</span>
+    </div>
+  </main>
+
+  <script src="lab8.js"></script>
+</body>
+</html>

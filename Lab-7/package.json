@@ -1,0 +1,15 @@
+{
+  "name": "yatzy-lab07",
+  "version": "1.0.0",
+  "description": "Yatzy Game - Lab 07 Client-Server Architecture",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["yatzy", "express", "node"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
