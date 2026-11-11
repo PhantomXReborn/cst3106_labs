@@ -17,7 +17,7 @@
     <p class="hint">Click <strong>Roll</strong> to animate the die and get a random value (1–6).</p>
 
     <!-- 2. Dice Representation: a single die, initially showing 6 -->
-    <div class="die" id="die" data-value="6" aria-label="Die" role="img">
+    <div class="die" id="die" data-value="6" aria-label="Die showing 6" role="img">
       <span class="pip"></span>
       <span class="pip"></span>
       <span class="pip"></span>
@@ -27,9 +27,10 @@
     </div>
 
     <!-- 4. Event Handling: button to trigger the roll -->
-    <button class="roll-btn" id="rollBtn">Roll</button>
+    <button class="roll-btn" id="rollBtn" type="button">Roll</button>
 
-    <div class="result" id="result">Face value: 6</div>
+    <!-- aria-live so screen readers announce the new value -->
+    <div class="result" id="result" aria-live="polite">Face value: 6</div>
 
     <div class="tech-tags">
       <span class="tech-tag">jQuery 3.7.1</span>
