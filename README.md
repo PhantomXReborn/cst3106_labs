@@ -202,6 +202,7 @@ This document defines the fonts, colours, components, layout, and consistency ru
 
 The app uses a responsive, mobile-first, grid-based layout.
 
+```text
 ┌─────────────────────────────────────────────┐
 │ HEADER: App title + role indicator │
 │ (Hospital Triage – User / – Admin) │
@@ -229,6 +230,7 @@ The app uses a responsive, mobile-first, grid-based layout.
 │ NAVIGATION: bottom bar (mobile) / │
 │ top bar (desktop) with role switch │
 └─────────────────────────────────────────────┘
+```
 
 > **`[TODO]`** Export this ASCII layout as a diagram (draw.io, Figma, or Excalidraw) and commit it to `/docs/wireframes/` in the GitHub repository. Reference it here as:
 >
@@ -238,6 +240,7 @@ The app uses a responsive, mobile-first, grid-based layout.
 
 ### 5.2 Navigation Flow
 
+```text
 ┌────────────────────┐
 │ App Entry Point │
 └─────────┬──────────┘
@@ -258,6 +261,7 @@ Decrease / Remove
 │
 Table updates, queue
 re-sorted by attention
+```
 
 - **Mobile:** A fixed bottom navigation bar keeps the primary role switch and key actions within thumb reach.
 - **Desktop:** A top navigation bar places the same actions in the conventional location for pointer users.
