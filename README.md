@@ -204,31 +204,31 @@ The app uses a responsive, mobile-first, grid-based layout.
 
 ```text
 ┌─────────────────────────────────────────────┐
-│ HEADER: App title + role indicator │
-│ (Hospital Triage – User / – Admin) │
+│ HEADER: App title + role indicator          │
+│ (Hospital Triage – User / – Admin)          │
 ├─────────────────────────────────────────────┤
-│ │
-│ MAIN CONTENT (single column on mobile, │
-│ centred max-width column on desktop) │
-│ │
-│ USER PAGE ADMIN PAGE │
-│ ┌───────────────────┐ ┌───────────────┐ │
-│ │ Title │ │ Title │ │
-│ │ Description │ │ Description │ │
-│ │ Injury selector │ │ Data table │ │
-│ │ Pain level 1–10 │ │ (Entry No., │ │
-│ │ [Submit Entry] │ │ Attention, │ │
-│ │ Confirmation msg │ │ Injury, Pain) │ │
-│ └───────────────────┘ │ [Load Data] │ │
-│ │ Selection │ │
-│ │ actions: │ │
-│ │ [Remove] │ │
-│ │ [Increase] │ │
-│ │ [Decrease] │ │
-│ └───────────────┘ │
+│                                             │
+│ MAIN CONTENT (single column on mobile,      │
+│ centred max-width column on desktop)        │
+│                                             │
+│ USER PAGE ADMIN PAGE                        │
+│ ┌───────────────────┐ ┌───────────────┐     │
+│ │       Title       │ │     Title     │     │
+│ │ Description       │ │ Description   │     │
+│ │ Injury selector   │ │ Data table    │     │
+│ │ Pain level 1–10   │ │ (Entry No.,   │     │
+│ │ [Submit Entry]    │ │ Attention,    │     │
+│ │ Confirmation msg  │ │ Injury, Pain) │     │
+│ └───────────────────┘ │ [Load Data]   │     │
+│                       │ Selection     │     │
+│                       │ actions:      │     │
+│                       │ [Remove]      │     │
+│                       │ [Increase]    │     │
+│                       │ [Decrease]    │     │
+│                       └───────────────┘     │
 ├─────────────────────────────────────────────┤
-│ NAVIGATION: bottom bar (mobile) / │
-│ top bar (desktop) with role switch │
+│ NAVIGATION: bottom bar (mobile) /           │
+│ top bar (desktop) with role switch          │
 └─────────────────────────────────────────────┘
 ```
 
@@ -242,23 +242,23 @@ The app uses a responsive, mobile-first, grid-based layout.
 
 ```text
 ┌────────────────────┐
-│ App Entry Point │
+│ App Entry Point    │
 └─────────┬──────────┘
-│
+          │
 ┌─────────┴─────────┐
-▼ ▼
+▼                   ▼
 ┌─────────────┐ ┌─────────────┐
 │ User Page │ │ Admin Page │
 │ (patient) │ │ (staff) │
 └──────┬──────┘ └──────┬──────┘
-│ │
+       │               │
 Fill questionnaire Load Data → review table
-│ │
+       │               │
 Submit Entry ──────────▶ appears in table
-│ │
+       │               │
 Confirmation screen Select row → Increase /
 Decrease / Remove
-│
+        │
 Table updates, queue
 re-sorted by attention
 ```
