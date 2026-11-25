@@ -6,7 +6,7 @@
 |---|---|
 | **Team member(s)** | Reece Hannah |
 | **GitHub repository** | https://github.com/PhantomXReborn/cst3106_labs/tree/lab-10 |
-| **Document version** | 1.0 |
+| **Document version** | 1.7 |
 | **Last updated** | *[2026-11-21]* |
 
 ---
