@@ -241,15 +241,15 @@ The app uses a responsive, mobile-first, grid-based layout.
 ### 5.2 Navigation Flow
 
 ```text
-┌────────────────────┐
-│ App Entry Point    │
-└─────────┬──────────┘
-          │
-┌─────────┴─────────┐
-▼                   ▼
+    ┌────────────────────┐
+    │ App Entry Point    │
+    └─────────┬──────────┘
+              │
+    ┌─────────┴─────────┐
+    ▼                   ▼
 ┌─────────────┐ ┌─────────────┐
-│ User Page │ │ Admin Page │
-│ (patient) │ │ (staff) │
+│ User Page   │ │ Admin Page  │
+│ (patient)   │ │ (staff)     │
 └──────┬──────┘ └──────┬──────┘
        │               │
 Fill questionnaire Load Data → review table
@@ -257,10 +257,10 @@ Fill questionnaire Load Data → review table
 Submit Entry ──────────▶ appears in table
        │               │
 Confirmation screen Select row → Increase /
-Decrease / Remove
-        │
-Table updates, queue
-re-sorted by attention
+          Decrease / Remove
+                  │
+         Table updates, queue
+         re-sorted by attention
 ```
 
 - **Mobile:** A fixed bottom navigation bar keeps the primary role switch and key actions within thumb reach.
