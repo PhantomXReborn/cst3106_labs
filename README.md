@@ -97,16 +97,14 @@ This document defines the fonts, colours, components, layout, and consistency ru
 
 ### 3.3 Contrast Verification
 
-> **`[TODO]`** Verify each pair below with a contrast checker (e.g., WebAIM) and record the ratio. The WCAG 2.2 AA threshold is **≥ 4.5:1** for body text and **≥ 3:1** for large text (≥ 18 pt / 24 px, or ≥ 14 pt / 18.66 px bold) and UI boundaries.
-
 | Foreground | Background | Ratio | Passes AA (body)? |
 |---|---|---|---|
-| Charcoal `#333333` | Neutral Grey `#F2F4F6` | *[x.x:1]* | *[ ]* |
-| White `#FFFFFF` | Calming Blue `#2E6DA4` | *[x.x:1]* | *[ ]* |
-| White `#FFFFFF` | Alert Red `#C62828` | *[x.x:1]* | *[ ]* |
-| White `#FFFFFF` | Dark Grey `#37474F` | *[x.x:1]* | *[ ]* |
-| Near-Black `#212121` | Light Grey `#ECEFF1` | *[x.x:1]* | *[ ]* |
-| White `#FFFFFF` | Attention Amber `#EF6C00` | *[x.x:1]* | *[ ]* *(likely fails for body — reserve for large text/labels only)* |
+| Charcoal `#333333` | Neutral Grey `#F2F4F6` | *[10.5:1]* | *[Yes]* |
+| White `#FFFFFF` | Calming Blue `#2E6DA4` | *[5.47:1]* | *[Yes]* |
+| White `#FFFFFF` | Alert Red `#C62828` | *[5.6:1]* | *[Yes]* |
+| White `#FFFFFF` | Dark Grey `#37474F` | *[9.65:1]* | *[Yes]* |
+| Near-Black `#212121` | Light Grey `#ECEFF1` | *[14:1]* | *[Yes]* |
+| White `#FFFFFF` | Attention Amber `#EF6C00` | *[3.1:1]* | *[No]*  (body text fails) |
 
 ### 3.4 Reasoning
 
