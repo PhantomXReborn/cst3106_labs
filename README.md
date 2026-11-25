@@ -169,6 +169,7 @@ This document defines the fonts, colours, components, layout, and consistency ru
 **Design choice:** Generous padding and visible labels reduce mis-taps and mistakes — crucial when a patient is in pain or distress. Errors are explained in text, not just colour.
 
 ### 4.5 Patient Questionnaire (User Page)
+Each User (Patient) needs to have a unique login and separate data according to the User and their information.
 
 - **Injury-type selector:** List/radio options — Head, Heart, Lung, Neck, Stomach, Bone or Muscle, Burn or Cut.
 - **Pain-level selector:** 1 (Not bad) → 10 (Unbearable), presented as a clear numbered scale.
