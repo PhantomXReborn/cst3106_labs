@@ -7,7 +7,7 @@
 | **Team member(s)** | Reece Hannah |
 | **GitHub repository** | https://github.com/PhantomXReborn/cst3106_labs/tree/lab-10 |
 | **Document version** | 1.0 |
-| **Last updated** | *[YYYY-MM-DD]* |
+| **Last updated** | *[2026-11-21]* |
 
 ---
 
@@ -55,16 +55,16 @@ This document defines the fonts, colours, components, layout, and consistency ru
 
 | Weight | Sample |
 |---|---|
-| Arial Regular (**400**) | The quick brown fox jumps over the lazy dog. |
-| Arial Semibold (**600**) | The quick brown fox jumps over the lazy dog. |
-| Arial Bold (**700**) | The quick brown fox jumps over the lazy dog. |
+| Arial Regular (400) | <span style="font-family: Arial, sans-serif; font-weight: 400;">The quick brown fox jumps over the lazy dog.</span> |
+| Arial Semibold (600) | <span style="font-family: Arial, sans-serif; font-weight: 600;">The quick brown fox jumps over the lazy dog.</span> |
+| Arial Bold (700) | <span style="font-family: Arial, sans-serif; font-weight: 700;">The quick brown fox jumps over the lazy dog.</span> |
 
 **Times New Roman — weight options**
 
 | Weight | Sample |
 |---|---|
-| Times Regular (**400**) | The quick brown fox jumps over the lazy dog. |
-| Times Semibold (**600**) | The quick brown fox jumps over the lazy dog. |
+| Times Regular (400) | <span style="font-family: Times, sans-serif; font-weight: 400;">The quick brown fox jumps over the lazy dog.</span> |
+| Times Semibold (600) | <span style="font-family: Times, sans-serif; font-weight: 600;">The quick brown fox jumps over the lazy dog.</span> |
 
 ### 2.3 Reasoning
 
